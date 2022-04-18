@@ -1,0 +1,114 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #19a2ae;
+  overflow: hidden; }
+  body::before {
+    content: "";
+    position: absolute;
+    top: -91%;
+    left: -48%;
+    height: 160%;
+    width: 100%;
+    background-image: url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1; }
+  body::after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    right: -40%;
+    height: 100%;
+    width: 100%;
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0.5rem 1.5rem; }
+  main .content {
+    max-width: 375px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); }
+    main .content .image {
+      position: relative; }
+      main .content .image img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0; }
+      main .content .image .person-img img {
+        position: absolute;
+        bottom: -35%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30%;
+        border: 2px solid white;
+        border-radius: 50%; }
+    main .content .text {
+      padding-top: 5rem; }
+      main .content .text-name {
+        text-align: center;
+        border-bottom: 1px solid rgba(150, 150, 150, 0.3); }
+        main .content .text-name h1 {
+          color: #2d3248;
+          font-size: 1.125rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem; }
+          main .content .text-name h1 span {
+            color: #6a6f81;
+            font-weight: 400;
+            margin-left: 0.3rem; }
+        main .content .text-name p {
+          color: #969696;
+          font-size: 1rem;
+          padding-bottom: 2rem; }
+      main .content .text-stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.4rem 3rem; }
+        main .content .text-stats .stat {
+          display: block;
+          text-align: center; }
+          main .content .text-stats .stat h2,
+          main .content .text-stats .stat h3,
+          main .content .text-stats .stat h4 {
+            color: #2d3248;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem; }
+          main .content .text-stats .stat p {
+            color: #6a6f81;
+            font-size: 0.8rem;
+            font-weight: 400; }
+
+/*
+- Font size (name and stats): 18px
+### Font
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+*/
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
+
+/*# sourceMappingURL=styles.css.map */
